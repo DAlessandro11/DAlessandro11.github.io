@@ -1,0 +1,517 @@
+*{
+    Margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 3.3vw;
+    color: var(--Letra_Color_Titulos);
+}
+h3{
+    font-size: 2vw;
+}
+.Op_Nav{
+    font-size: 3vw;
+}
+
+li{
+    list-style: none;        
+}
+.NavBanner .__BannerContainer a{
+    text-decoration: none;
+    color: var(--Letra_Color_Titulos);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.NavBanner{
+    display: flex;
+    background-color: var(--nav_Color);
+    padding: 5px 20px 5px 20px;
+    gap: 2vw;
+
+    height: 40vh;    
+}
+.NavBanner div{
+    width : 50vw ;
+    height : 100%;
+    
+}
+.NavBanner img{
+    object-fit:cover;
+    width : 100% ;
+    height : 100%;
+    
+}
+
+.NavBanner ul{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+/****************************************************************/
+.body{
+    margin: 20px;
+    
+}
+/****************************************************************/
+.Section_Nosotros{
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    margin-bottom: 20px;
+    font-size: 2vw;
+}
+.Section_Nosotros div{
+    width: 50%;
+    height: 45vw;
+}
+.Section_Nosotros .Cont_img{
+    position: relative;
+    overflow: hidden;
+    
+}
+.Section_Nosotros img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Section_Nosotros .Cont_Informacion{
+    padding: 2vh 20px 0px 20px ;
+    height: 100%;
+}
+/****************************************************************/
+.Servicios{    
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    font-size: 5vw;
+}
+.Servicios .Item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;    
+    color: #000;
+    width: 40vw;
+    height: 45vw;
+    margin: 1.7px;
+    
+    cursor: pointer;
+}
+.Item p{
+    position: absolute;
+    color: inherit;
+    transition: none;
+    text-align: center;
+    z-index: 1;
+    background: rgba(255,255,255,0.6); /* opcional: mejora la legibilidad */
+}
+
+.Servicios img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;    
+    transition: filter 0.4s ease;
+    z-index: 0;
+}
+.Item:hover img{
+    filter: brightness(80%);
+}
+
+
+.Servicios p{
+    position: absolute;
+    text-align: center;
+    
+}
+/********************************************************************************/
+.Contactanos{
+    display: flex;
+    justify-content: space-around;
+    gap: 1vw;
+    margin-bottom: 10vh;
+}
+.Cont_Form{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Cont_Form div{
+    display: flex;
+    gap: 10px;
+}
+input{
+    font-size: 1.4vw;
+    padding-left: 4px;
+    height: 40px;
+    border-color: transparent;
+    background-color: var(--Gris_Inputs);
+}
+.Cont_Form input{
+    flex: 1;    
+}
+.Contactanos_Column1 {
+    flex: 0.7;
+    width: 30vw;
+}
+.Contactanos_Column2 {
+    margin-right: 1vw;
+    width: 30%;
+    height: 50%;
+    
+}
+.Contactanos_Column2 iframe{
+    width: 100%;   
+    max-height: 60vh;
+    min-height: 40vh;
+}
+textarea{
+    padding-top: 5px;
+    font-size: 1.4vw;
+    padding-left: 4px;
+    height: 100px;
+    border-color: transparent;
+    background-color: var(--Gris_Inputs);
+    resize: vertical;
+}
+.Enviar_btn{
+    font-size: 1.3vw;
+    margin-left: 3px;
+    width: 11.5vw;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--nav_Color);
+    border-color:transparent;
+    color: #ffffff;
+}
+/***************************************************************************************************/
+.Footer{
+    width: 100%;
+    background-color: var(--nav_Color);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    color: #ffffff;
+    font-size: 1.8vw;
+}
+.Footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Footer_Columna1 , .Footer_Columna2{
+    text-align: center;
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;      
+    
+}
+.Footer_Columna2{
+    justify-content: space-between;
+    gap: 10px;
+}
+.Footer_Columna2 div{
+    width: 50%;
+}
+.Footer_Columna2 ul{
+    width: 100%;
+}
+.Footer_Columna1 li ,.Footer_Columna2 li{
+    margin-bottom: 20px;
+    
+}
+.Footer_Columna2_Contactos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;  
+    align-items: center;  
+    width: 50%;
+    
+
+}
+.Footer_Cont_ImagesLogos{    
+    margin: 10px 10px 0px 10px;  
+    display: flex;
+    justify-content: space-around;
+    
+}
+.Footer_Cont_ImagesLogos div{
+    width: 2vw;
+    height: 2vw;
+}
+.Footer_Cont_ImagesLogos img{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    color:#373636;
+    height: 30vh;
+
+}
+
+:root{
+    --nav_Color : #3471FF;
+    --Letra_Color_Titulos: #0B1C5B;
+    --Leta_Negro_Parrafos: 000;
+    --Leta_Negro_Parrafos: #373636;
+    --Gris_Inputs: #d9d9d9;
+}
+html {
+    scroll-behavior: smooth;
+}
+/**************************************************************/
+.NavBanner_Responsive{
+    
+    display: none ;
+}
+.Servicios_Responsive{
+    display: none;
+}
+.Footer_Responsive{
+    display: none;
+}
+
+@media only screen and (max-width : 500px){
+
+.body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+h1{
+    font-size: 3.3vw;
+    color: var(--Letra_Color_Titulos);
+}
+h3{
+    font-size: 3vw;
+}
+.NavBanner_Responsive{
+    display: flex;
+    background-color: var(--nav_Color);   
+    padding: 5px; 
+
+}
+
+#menu_toggle {
+    display: none;
+}
+
+#menu_toggle:checked + .ThreeLines__Cont + .__BannerContainer_Responsive {
+    top: 16.1vh;     /* SE DESPLIEGA — respetando tu altura del logo */
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* LOGO */
+.__BannerContainer_Logo{
+    width: 50vw;
+    height: 15vh;
+}
+.__BannerContainer_Logo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%
+}
+
+/* LINKS DEL MENÚ */
+.__BannerContainer_Responsive a{
+    display: block;
+    text-align: center;
+    font-size: 5vw;
+    text-decoration: none;
+    color: var(--Letra_Color_Titulos);
+    padding: 10px 0;   
+}
+
+/* ICONO THREE LINES */
+.ThreeLines__Cont{   
+    align-self: center;
+    margin-left: auto;
+    margin-right: 20px;
+    width: 20vw;
+    height: 20vw;
+}
+.ThreeLines__Cont img{
+    width: 100%;
+    height: 100%;
+}
+
+/* MENÚ OCULTO POR DEFECTO */
+.__BannerContainer_Responsive{
+    position: absolute;
+    top: -100%;          /* OCULTO HACIA ARRIBA, COMO ESTABAS HACIENDO */
+    left: 0;
+    width: 100%;
+
+    background-color: #ffffff;
+    opacity: 0;
+    pointer-events: none;
+    transition: top 0.4s ease, opacity 0.3s ease;
+    z-index: 100;
+}
+.NavBanner{
+    display: none;
+
+}
+/****************************************************************/
+.Section_Nosotros{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    
+}.Section_Nosotros h1{
+    display: none;
+}.Section_Nosotros h3{
+    font-size: 2.1vh;
+    color: #ffffff;
+}
+
+.Section_Nosotros div{
+    
+    align-self: center;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    z-index: 1;    
+}
+.Section_Nosotros .Cont_img{
+    
+    width: 100vw;
+
+    
+    overflow: hidden;
+    z-index: 0;
+}
+.Section_Nosotros img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* mantiene proporción */
+
+    filter: brightness(45%) contrast(140%);
+}
+.Section_Nosotros .Cont_Informacion{
+    padding: 0;
+    width: 100%;
+    height: 75%;
+    top: 25%;
+    left: 5%;
+    align-items: center;
+    align-self: center;
+}
+
+/****************************************************************/
+.Servicios{    
+    display: none;
+}
+.Servicios_Responsive{
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.Servicios_Responsive .Cont_Img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Servicios_Responsive .Cont_Img img{
+    width: 80px;           
+    height: auto;
+    object-fit: contain;  
+    
+}
+.Servicios_Responsive .Item{
+    padding: 20px;
+    display: flex;
+    align-self: center;
+    align-items: center; 
+    text-align: center;
+    justify-content: space-evenly;
+    width: 85%;
+    gap: 15px;              
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.Servicios_Responsive h1{
+    font-size: 4vw;
+    width: 50%;
+}
+/****************************************************************/
+.Contactanos{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 5%;
+}
+.Contactanos_Column1 div{
+    flex-direction: column;
+    height: 74px;
+}
+.Contactanos_Column1 div input{
+    padding: 5px; 
+    
+}
+.Contactanos h1{
+    font-size: 8vw;
+    text-align: center;
+}
+.Contactanos_Column2{   
+    display: none;
+}
+input{
+    font-size: 4vw;
+}
+textarea{
+    margin-top: 10px;
+    padding-top: 5px;
+    font-size: 4vw;
+    padding-left: 4px;
+    height: 100px;
+    border-color: transparent;
+    background-color: var(--Gris_Inputs);
+    resize: vertical;
+}
+.Enviar_btn{
+    font-size: 4vw;
+    margin-left: 3px;
+    width: 20vw;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--nav_Color);
+    border-color:transparent;
+    color: #ffffff;
+}
+/****************************************************************/
+.Footer{
+    display: none;    
+}
+.Footer_Responsive{
+    display: block;
+}
+.Footer_Responsive .Icons_Container{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--nav_Color);
+}
+.Footer_Responsive .Icons_Container img{
+    padding: 5px 0px 5px 0px;
+    height:40px ;
+    width:40px ;
+}
+}

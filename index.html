@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Inicio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS/IndexEstilos.css">
+    </head>
+    <body>
+        <nav class="NavBanner">
+            <div class="__BannerContainer_Logo"><img src="/Imgs/FYCDI.jpg" alt="Logo"></div>
+            
+            <ul class="__BannerContainer">
+                <li class="Op_Nav"><a href="#">Inicio</a></li>
+                <li class="Op_Nav"><a href="#Nosotros">Nosotros</a></li>
+                <li class="Op_Nav"><a href="#Servicios">Servicios</a></li>
+                <li class="Op_Nav"><a href="#Contactanos">Contactanos</a></li>
+            </ul>
+        </nav>
+        <nav class="NavBanner_Responsive">
+
+        <div class="__BannerContainer_Logo">
+            <img src="/Imgs/FYCDI.jpg" alt="Logo">
+        </div>
+
+        
+        <input type="checkbox" id="menu_toggle">
+
+        
+        <label for="menu_toggle" class="ThreeLines__Cont">
+            <img src="/Imgs/Img_Icons/Three_Lines.png" alt="">
+        </label>
+
+        
+        <ul class="__BannerContainer_Responsive">
+            <li class="Op_Nav"><a href="#">Inicio</a></li>
+            <li class="Op_Nav"><a href="#Nosotros">Nosotros</a></li>
+            <li class="Op_Nav"><a href="/HTML/Servicios.html">Servicios</a></li>
+            <li class="Op_Nav"><a href="#Contactanos">Contactanos</a></li>
+        </ul>
+
+</nav>
+        
+        <section class="body">
+            <section class="Section_Nosotros" id="Nosotros">
+                <div class="Cont_img">
+                    <img src="/Imgs/Nosotrs_Img.jpg" alt="">
+                </div>
+                <div class="Cont_Informacion">
+                    <h1 style= "text-align: center; margin-bottom: 50px;"><i>Fabricación y Cromo Duro Industrial</i></h1>
+                    <h3><b><i>Brindamos servicio, reparación de cilindros hidráulicos y  mantenimiento de maquinaria pesada.</i></b></h3>
+                    <br><br><h3 style="color: #8E8E8E;"><b><i>ATENDEMOS LIMA Y PROVINCIAS COTIZA SIN  COMPROMISO: 929 735 273</i></b></h3>
+                </div>                
+            </section>
+            <section class="Servicios" id="Servicios">
+                <div class="Item" onclick="window.location.href='servicios.html#Car_Cro'"><p>SERVICIO DE CROMADO DURO INDUSTRIAL</p><img src="/Imgs/Img_Crom/Servicios_Cromado.jpg" alt=""></div>
+                <div class="Item" onclick="window.location.href='servicios.html#Car_Man'"><p>MANTENIMIENTO Y REPARACIÓN DE CILINDROS HIDRÁULICOS</p><img src="/Imgs/Img_Man/Imagen_Reparacion.jpg" alt=""></div>
+                <div class="Item" onclick="window.location.href='servicios.html#Car_Fab'"><p>FABRICACION DE RESPUESTOS EN GENERAL</p><img src="/Imgs/Img_Fab/Imagen_Fabricacion.jpg" alt=""></div>
+                <div class="Item" onclick="window.location.href='servicios.html#Car_Rec'"><p>SERVICIO DE RECTIFICADO CILÍNDRICO</p><img src="/Imgs/Img_Rec/Imagen_Rectificado.jpg" alt=""></div>
+            </section>
+            <section class="Servicios_Responsive">
+                <div class="Item">
+                    <div class="Cont_Img">
+                        <img src="/Imgs/Img_Icons/Brillos.png" alt="">
+                    </div>
+                    <h1>Cromo duro industrial</h1>
+                </div>
+
+                <div class="Item">
+                    <div class="Cont_Img">
+                        <img src="/Imgs/Img_Icons/piston_Icon.png" alt="">
+                    </div>
+                    <h1>Fabricación según plano e indicaciones</h1>
+                </div>
+
+                <div class="Item">
+                    <div class="Cont_Img">
+                        <img src="/Imgs/Img_Icons/taladro-de-mano.png" alt="">
+                    </div>
+                    <h1>Mantenimiento y Reparación de Cilindros Hidraulicos</h1>
+                </div>
+
+                <div class="Item">
+                    <div class="Cont_Img">
+                        <img src="/Imgs/Img_Icons/reparar.png" alt="">
+                    </div>
+                    <h1>Servicio de Rectificado Cilíndrico</h1>
+                </div>
+            </section>
+            
+            <section class="Contactanos" id="Contactanos">
+                <div class="Contactanos_Column1">
+                    <h1><b><i>Contactanos</i></b></h1><br>
+                    <form action="https://formsubmit.co/stefanorevolo159@email.com" method="POST"class="Cont_Form">
+                        <input placeholder="Nombres y Apellidos" type="text" name="Nombres" style="padding-top: 10px;padding-bottom: 10px;">
+                        <div>
+                            <input placeholder="Número" inputmode="numeric" 
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')" 
+                            id="Número">
+                            <input placeholder="Correo" type="email" id="Correo">
+                        </div>
+                        <textarea placeholder="Mensaje..." name="TextArea" id="TextArea"></textarea>
+                        <input type="submit" class="Enviar_btn" id="Enviar_btn" value="Enviar" style="font-style: italic; font-weight: bold;"></input>
+                    </form>
+                </div>
+                <div class="Contactanos_Column2" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.884345911337!2d-77.05682711114504!3d-11.982503799999975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cfc75675d2d9%3A0xe68b00ac4d791b6f!2sFabricaci%C3%B3n%20y%20Cromo%20Duro%20Industrial%20SAC!5e0!3m2!1ses!2spe!4v1761862290938!5m2!1ses!2spe"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="height: 100%;"></iframe>
+                </div>
+
+
+            </section>                        
+        </section>
+        <nav class="Footer">
+            <div class= "Footer_Columna1">
+                <div>
+                    <ul>
+                        <li><b><i><a href="/HTML/Index.html">Inicio</a></i></b></li>
+                        <li><b><i><a href="/HTML/Servicios.html">Servicios</a></i></b></li>
+                        <li><b><i><a href="#">Nosotros</a></i></b></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><b><i><a href="servicios.html#Car_Cro">Servicio de Cormado Duro</a></i></b></li>
+                        <li><b><i><a href="servicios.html#Car_Man">Mantenimiento y Reparación</a></i></b></li>
+                        <li><b><i><a href="servicios.html#Car_Fab">Rectificado Cílindrico</a></i></b></li>
+                        <li><b><i><a href="servicios.html#Car_Rec">Fabricacion de cilindros</a></i></b></li>
+                    </ul>                    
+                </div>
+            </div>
+            <hr>
+            <div class = "Footer_Columna2">
+                <div>
+                    <ul>
+                        <li><b><i>fabricacion.cromoduro <br> @gmail.com</i></b></li>
+                        <li><b><i>Av. Huanacaure 178 Segunda Zona , Lima, Peru</i></b></li>
+                    </ul>
+                </div>
+                <div class="Footer_Columna2_Contactos">
+                    <b><i>929 735 273</i></b>
+                    <b><i>Contactanos</i></b>
+                    <div class="Footer_Cont_ImagesLogos">
+                        <a href="mailto:fabricacion.cromoduro@gmail.com?subject=Solicitud%20de%20servicio&body=Hola,%20quiero%20solicitar%20su%20servicio." target="_blank"><div style="cursor: pointer;" id="Wts_btn"><img src="/Imgs/Img_Logos/Gmail_icon.png" alt=""></div></a>
+                        <a href="https://wa.me/51929735273?text=Hola%20quiero%20solicitar%20su%20servicio" target="_blank"><div style="cursor: pointer;"><img src="/Imgs/Img_Logos/Whatsapp_icon.png" alt=""></div></a>
+                        <a href="https://www.facebook.com/facduindsac" target="_blank"><div style="cursor: pointer;"><img src="/Imgs/Img_Logos/Facebook_Icon.png" alt=""></div></a>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+        <nav class="Footer_Responsive">
+            <ul class="Icons_Container">
+                <li><a href="mailto:fabricacion.cromoduro@gmail.com?subject=Solicitud%20de%20servicio&body=Hola,%20quiero%20solicitar%20su%20servicio." target="_blank"><img src="/Imgs/Img_Icons/Gemail_Icon.png" alt=""></a></li>
+                <li><a href="https://wa.me/51929735273?text=Hola%20quiero%20solicitar%20su%20servicio"><img src="/Imgs/Img_Icons/Celular_Icon.png" alt=""></a></li>
+                <li><a href=""><img src="/Imgs/Img_Icons/ubicacion.png" alt=""></a></li>
+                <li><a href="https://www.facebook.com/facduindsac"><img src="/Imgs/Img_Icons/Facebook_Icon.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </body>
+    
+</html>

@@ -1,0 +1,145 @@
+*{
+    Margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 3.3vw;
+    color: var(--Letra_Color_Titulos);
+}
+h3{
+    font-size: 2.3vw;
+}
+
+li{
+    list-style: none;        
+}
+/**************************************************************************/
+.Cuerpo{
+    padding: 20px;
+}
+
+.IMG_CONT{
+    /**/position: relative;
+    /**/overflow: hidden;
+    width: 50%;    
+    background-color: #373636;    
+    height: 60vh;
+}
+.IMG_CONT::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #d9d9d9d9;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.IMG_CONT.flash::after{
+    opacity: 1;
+}
+.IMG_CONT img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /**/
+    display: block;
+    transition: opacity 0.5s ease;
+}
+.Servicios_Fila{
+    display: flex;
+    gap: 50px;
+}
+.CONT_INFORMACION{
+    width: 50%;
+    
+}
+
+/**************************************************************************/
+.Footer{
+    
+    background-color: var(--nav_Color);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    color: #ffffff;
+}
+.Footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Footer_Columna1 , .Footer_Columna2{
+    text-align: center;
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;    
+    
+}
+.Footer_Columna1 li ,.Footer_Columna2 li{
+    margin-bottom: 10px;
+}
+.Footer_Columna2_Contactos{
+    align-items: center;
+    text-align: center;
+}
+.Footer_Cont_ImagesLogos{  
+    margin: 10px 10px 0px 10px;  
+    display: flex;
+    justify-content: space-around;
+}
+.Footer_Cont_ImagesLogos div{
+    width: 20px;
+    height: 20px;
+}
+.Footer_Cont_ImagesLogos img{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    color:#373636;
+    height: 19vh;
+}
+
+:root{
+    --nav_Color : #3471FF;
+    --Letra_Color_Titulos: #0B1C5B;
+    --Leta_Negro_Parrafos: 000;
+    --Leta_Negro_Parrafos: #373636;
+    --Gris_Inputs: #d9d9d9;
+}
+html {
+    scroll-behavior: smooth;
+}
+@media only screen and (max-width : 500px){
+    .Servicios_Fila div{
+        height: 20vh;
+    }
+    .CONT_INFORMACION{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        height: 100%;
+        justify-content: center;
+        
+        
+    }
+    .Footer{
+    display: none;    
+}
+.Footer_Responsive{
+    display: block;
+}
+.Footer_Responsive .Icons_Container{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--nav_Color);
+}
+.Footer_Responsive .Icons_Container img{
+    padding: 5px 0px 5px 0px;
+    height:40px ;
+    width:40px ;
+}
+}
