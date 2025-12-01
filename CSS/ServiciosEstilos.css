@@ -113,6 +113,10 @@ hr{
 html {
     scroll-behavior: smooth;
 }
+.Footer_Responsive{
+    display: none;
+}
+
 @media only screen and (max-width : 500px){
     .Servicios_Fila div{
         height: 20vh;
